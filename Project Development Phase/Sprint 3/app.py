@@ -51,9 +51,9 @@ app.config['security'] = 'SSL'
 try:
     mysql = DB2(app)
 
-    conn_str='database=bludb;hostname=3883e7e4-18f5-4afe-be8c-fa31c41761d2.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;port=31498;protocol=tcpip;\
-            uid=sbb93800;pwd=wobsVLm6ccFxcNLe;security=SSL'
-    ibm_db_conn = ibm_db.connect(conn_str,'','')
+    ibm_db_conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=b1bc1829-6f45-4cd4-bef4-10cf081900bf.c1ogj3sd0tgtu0lqde00.databases.appdomain.cloud;PORT=32304;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt; UID=bdn89663;PWD=y9pVOZ7qDlOOo9sm",'','')
+
+
         
     print("Database connected without any error !!")
 except:
